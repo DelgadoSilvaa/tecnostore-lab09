@@ -127,7 +127,7 @@ function formatearPrecio(monto, moneda, decimales) {
 function calcularDescuento(precio, porcentaje) {
   porcentaje = porcentaje || 0;
   var descuento = precio * (porcentaje / 100);
-  return precio + descuento;
+  return precio - descuento;
 }
 
 // Calcula el precio final con IGV
